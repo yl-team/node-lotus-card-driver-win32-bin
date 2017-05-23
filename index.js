@@ -103,5 +103,5 @@ function testReadUserCardEx(hLotusCard){
 }
 
 // testReadData();
-// testReadCard()
-testReadUserCardEx();
+testReadCard()
+// testReadUserCardEx();

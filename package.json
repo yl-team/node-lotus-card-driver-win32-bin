@@ -1,5 +1,5 @@
 {
-  "name": "node-lotus-card-driver",
+  "name": "node-lotus-card-driver-win32",
   "version": "1.0.0",
   "description": "",
   "main": "./lib/index.js",
