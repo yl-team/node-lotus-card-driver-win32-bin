@@ -1,0 +1,6 @@
+/.idea
+#/lib/deps
+/build
+/node_modules
+/src/tmp*
+/*.dll

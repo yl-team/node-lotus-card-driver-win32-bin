@@ -1,0 +1,23 @@
+{
+  "name": "node-lotus-card-driver",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./lib/index.js",
+  "binary": {
+    "module_name": "LotusCardDriver",
+    "module_path": "./lib/native/{node_abi}-{platform}-{arch}",
+    "host": "None",
+    "remote_path": "./{name}/v{version}/{toolset}/",
+    "package_name": "{node_abi}-{platform}-{arch}.tar.gz"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "install": "node-pre-gyp install --fallback-to-build",
+    "r" : "node-pre-gyp rebuild"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-pre-gyp": "^0.6.25"
+  }
+}
