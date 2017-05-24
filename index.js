@@ -1,10 +1,10 @@
-﻿/**
+/**
  * Created by wu on 2016/3/30.
  */
 
 
 var lt = require('./lib/');
-//var lt = require('./build/Release/LotusCardDriver.node');
+// var lt = require('./build/Release/LotusCardDriver.node');
 //var lt = require('./lib/native/node-v46-win32-ia32/LotusCardDriver.node');
 //var lt = require('./lib/native/electron-v0.37-win32-ia32/LotusCardDriver.node');
 
@@ -22,7 +22,7 @@ var readData = function(hLotusCard){
     //console.log(lp.nCardSize);
 
     console.log(    lp.arrKeys );
-    lp.nKeysSize = 5;
+    lp.nKeysSize = 6;
 
 
     var nRequestType = lt.RT_ALL;
@@ -94,14 +94,14 @@ function testReadCard(hLotusCard){
     
 }
 
-function testReadUserCardEx(hLotusCard){
+function testReadUserCardBw9kv6(hLotusCard){
     var nHandle=lt.LotusCardOpenDevice('',0,0,0,200,null);
-    var dd  = lt.readUserCardEx(nHandle,"123456");
+    var dd  = lt.readUserCardBw9kv6(nHandle,"123456");
     console.log('read card ex:',dd);
     lt.LotusCardCloseDevice(nHandle);
     
 }
 
 // testReadData();
-testReadCard()
-// testReadUserCardEx();
+// testReadCard()
+testReadUserCardBw9kv6();
