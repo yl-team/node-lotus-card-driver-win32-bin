@@ -5,8 +5,8 @@
 
 var lt = require('./lib/');
 // var lt = require('./build/Release/LotusCardDriver.node');
-//var lt = require('./lib/native/node-v46-win32-ia32/LotusCardDriver.node');
-//var lt = require('./lib/native/electron-v0.37-win32-ia32/LotusCardDriver.node');
+// var lt = require('./lib/native/node-v46-win32-ia32/LotusCardDriver.node');
+// var lt = require('./lib/native/electron-v0.37-win32-ia32/LotusCardDriver.node');
 
 var readData = function(hLotusCard){
     var lp = new lt.LotusCardParamStruct();
